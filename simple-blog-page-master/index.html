@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>The Boomer Art</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <nav class = "navbar">
+        <div class = "container">
+          <a href = "index.html" class = "navbar-brand">Art.Design</a>
+          <div class = "navbar-nav">
+            <a href = "">HOME</a>
+            <a href = "">BLOGS</a>
+            <a href = "">DESIGNS</a>
+            <a href = "">ABOUT</a>
+          </div>
+        </div>
+      </nav>
+      <div class = "banner">
+        <div class = "container">
+          <h1 class = "banner-title">
+            <span>THE</span> <span id="banner1">BOOMER</span> ART
+          </h1>
+          <p>Handwritten Blogs about arts & Cool designs</p>
+        </div>
+      </div>
+    </header>
+    <!-- end of header -->
+    
+    <!-- blog -->
+  
+    
+    <section class = "blog" id = "blog">
+      <div class = "container">
+        <div class = "title">
+          <h2 id="Blog1">Blogs</h2><br>
+          <p id="para1">recent blogs about art & design</p><br>
+          <form>
+            <input id="search" onkeyup = "search_blog()" type="search" placeholder="Search Here">
+            <span class="caret"></span>
+          </form>
+        </div>
+        <div class = "blog-content">
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/blog-p-1.jpg" class="theImage" alt = "">
+              <span><i class = "far fa-heart" onclick="increment1()"></i></span>
+              <p class="like" id="counting1"></p>
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+              <a href = "blog1.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/blog-p-2.jpg" class="theImage" alt = "">
+              <span><i class = "far fa-heart" onclick="increment2()"></i></span>
+              <p class="like" id="counting2"></p>
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+              <a href = "blog2.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/blog-p-3.jpg" class="theImage" alt = "">
+              <span><i class = "far fa-heart" onclick="increment3()"></i></span>
+              <p class="like" id="counting3"></p>
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+              <a href = "blog3.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/blog-p-4.jpg" class="theImage" alt = "">
+              <span><i class = "far fa-heart" onclick="increment4()"></i></span>
+              <p class="like" id="counting4"></p>
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+              <a href = "blog4.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/blog-p-5.jpg" class="theImage" alt = "">
+              <span><i class = "far fa-heart" onclick="increment5()"></i></span>
+              <p class="like" id="counting5"></p>
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Lorem ipsum, dolor sit amet consectetur adipisicing</h2>
+              <p>pp ipsum dolor, sit amet consectetur adipisicing elit. Omnis libero quas ipsum laudantium nihil! Quaerat.</p>
+              <a href = "blog5.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+          <!-- item -->
+          <div class = "blog-item">
+            <div class = "blog-img">
+              <img src = "images/blog-p-6.jpg" class="theImage" alt = "">
+              <span><i class = "far fa-heart" onclick="increment6()"></i></span>
+              <p class="like" id="counting6"></p>
+            </div>
+            <div class = "blog-text">
+              <span>20 January, 2020</span>
+              <h2>Why Your Nonprofit’s Art Collection Database Needs a CRM</h2>
+              <p>Does your art collection database have an integrated CRM? If not, you may be spending more time and money than need be. Learn why it’s crucial to streamline your information in one single platform.</p>
+              <a href = "blog6.html">Read More</a>
+            </div>
+          </div>
+          <!-- end of item -->
+        </div>
+      </div>
+    </section>
+    <!-- end of blog -->
+    <section class = "design" id = "design">
+      <h2 id="Blog1">Designs</h2><br>
+    <div class="wrapper">
+      <div class="gallery">
+        <ul>
+          <li><img src="images/art-design-1.jpg"></li>
+          <li><img src="images/art-design-2.jpg"></li>
+          <li><img src="images/art-design-3.jpg"></li>
+          <li><img src="images/art-design-4.jpg"></li>
+          <li><img src="images/art-design-5.jpg"></li>
+          <li><img src="images/art-design-6.jpg"></li>
+          <li><img src="https://images.unsplash.com/photo-1586105251261-72a756497a11?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=658&q=80"></li>
+          <li><img src="https://images.unsplash.com/photo-1586244897859-2cd81e1cad1f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80"></li>
+          <li><img src="https://images.unsplash.com/photo-1598434539522-aa7fba64f791?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=375&q=80"></li>
+          <li><img src="https://images.unsplash.com/photo-1559143748-760b291bc101?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80"></li>
+          <li><img src="https://images.unsplash.com/photo-1577703025450-4a543d6b4976?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=377&q=80"></li>
+          <li><img src="https://images.unsplash.com/photo-1488645411773-a3b09ea07e29?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=844&q=80"></li>
+        </ul>
+      </div>
+      <p class="attribution">Some Unique Designs That Can Inspired You.</p>
+    </div>
+  </section>
+
+    <!-- about -->
+    <section class = "about" id = "about">
+      <h2 id="Blog1">About</h2><br>
+      <div class = "container">
+        <div class = "about-content">
+          <div>
+            <img src = "images/about-bg.jpg" class="imgShake" alt = "">
+          </div>
+          <div class = "about-text">
+            <div class = "title">
+              <h2>Catherine Doe</h2>
+              <p>art & design is my passion</p>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id totam voluptatem saepe eius ipsum nam provident sapiente, natus et vel eligendi laboriosam odit eos temporibus impedit veritatis ut, illo deserunt illum voluptate quis beatae quod. Necessitatibus provident dicta consectetur labore!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam corrupti natus, eos quia recusandae voluptatem veniam modi officiis minima provident rem sint porro fuga quos tempora ea suscipit vero velit sed laudantium eaque necessitatibus maxime!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of about -->
+
+    <!-- ======================================== 
+          Our  Cotnact Us Section   
+    ========================================  -->
+
+    <section class="section section-contact ">
+      <div class="container">
+        <h2 class="common-heading">contact us</h2>
+      </div>
+
+      <div class = "frame">
+        <div id = "button_open_envelope">
+                Email me
+              </div>
+              <div class = "message">
+                <form action="https://formspree.io/f/xayvzdan"
+                method="POST">
+                  <input type="text" name="name" id="name" placeholder=" Name* " required>
+              
+                  <input type="email" name="email" id="email" placeholder=" Email* " required pattern="^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$">
+                
+                  <input type="text" name="phone" id="phone" placeholder=" Phone (optional)" autofocus> 
+                
+                  <textarea name="message" id="messarea" placeholder=" Message* " required></textarea>
+              
+                  <input type="text" name="address" id="address" style="display: none;">
+                  <input type="submit" value="Send" id="send">
+                </form>
+              </div>
+              <div class = "bottom"></div>      
+              <div class = "left"></div>
+              <div class = "right"></div>
+              <div class = "top"></div>
+            </div>
+    </section>
+    
+
+    <!-- footer -->
+    <footer>
+      <div class = "social-links">
+        <a href = "#"><i class = "fab fa-facebook-f"></i></a>
+        <a href = "#"><i class = "fab fa-twitter"></i></a>
+        <a href = "#"><i class = "fab fa-instagram"></i></a>
+        <a href = "#"><i class = "fab fa-pinterest"></i></a>
+      </div>
+      <span>Art.Design Blog Page</span><br><br>
+      <span>Copyright 1999-2022 by Refsnes Data. All Rights Reserved.</span>
+    </footer>
+    <!-- end of footer -->
+<script >
+    $(document).ready(function(){
+      $('.frame').click(function(){
+        $('.top').addClass('open');
+        $('.message').addClass('pull');
+      })
+    });
+    </script>
+    <script>
+  var data1 = 800;
+  var data2 = 600;
+  var data3 = 500;
+  var data4 = 300;
+  var data5 = 400;
+  var data6 = 500;
+  
+  //printing default value of data that is 0 in h2 tag
+  document.getElementById("counting1").innerText = data1;
+  document.getElementById("counting2").innerText = data2;
+  document.getElementById("counting3").innerText = data3;
+  document.getElementById("counting4").innerText = data4;
+  document.getElementById("counting5").innerText = data5;
+  document.getElementById("counting6").innerText = data6;
+  //creation of increment function
+  function increment1() {
+      data1 = data1 + 1;
+      document.getElementById("counting1").innerText = data1;
+  }
+  function increment2() {
+      data2 = data2 + 1;
+      document.getElementById("counting2").innerText = data2;
+  }
+  function increment3() {
+      data3 = data3 + 1;
+      document.getElementById("counting3").innerText = data3;
+  }
+  function increment4() {
+      data4 = data4 + 1;
+      document.getElementById("counting4").innerText = data4;
+  }
+  function increment5() {
+      data5 = data5 + 1;
+      document.getElementById("counting5").innerText = data5;
+  }
+  function increment6() {
+      data6 = data6 + 1;
+      document.getElementById("counting6").innerText = data6;
+  }
+
+  function search_blog() {
+    let input = document.getElementById('search').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('.blog-text');
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+}
+    </script>
+    
+  </body>
+</html>
